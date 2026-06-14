@@ -1,0 +1,55 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-image { display: block; flex: 1; }
+.mode-portrait .sl-image { display: none; }
+.mode-landscape .sl-content { width: 52%; }
+.mode-portrait .sl-content { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-600"></span>
+        <span class="text-xs font-bold tracking-widest uppercase text-amber-700">Coffee Shop POS &amp; Finance</span>
+      </div>
+
+      <!-- Headline block -->
+      <div>
+        <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-3">Working title</p>
+        <h1 class="text-6xl font-black leading-none text-stone-900 mb-3">
+          Brew<span class="text-amber-600">Books</span>
+        </h1>
+        <div class="w-10 h-1 bg-amber-600 rounded-full mb-6"></div>
+        <p class="text-lg text-stone-600 leading-relaxed max-w-xs">
+          Ring it up. Know where you stand. The POS and financial platform purpose-built for coffee shops.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-semibold rounded-full">Point of Sale</span>
+          <span class="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-semibold rounded-full border border-amber-200">Integrated Accounting</span>
+          <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-semibold rounded-full">Inventory</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <data-attribution />
+
+    </div>
+
+    <!-- Right: image panel -->
+    <div class="sl-image overflow-hidden relative bg-stone-100">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=warm%20modern%20coffee%20shop%20counter%20with%20espresso%20machine%2C%20soft%20amber%20morning%20light%2C%20minimal%20clean%20editorial%20photography%2C%20no%20people%2C%20premium%20aesthetic"
+        class="w-full h-full object-cover"
+        alt="Coffee shop counter"
+      />
+      <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+    </div>
+
+  </div>
+</section>
