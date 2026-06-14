@@ -1,0 +1,108 @@
+<style>
+.mode-landscape .sl-body { flex-direction: row; }
+.mode-portrait .sl-body { flex-direction: column; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-600"></span>
+        <span class="text-xs font-bold tracking-widest uppercase text-amber-700">Platform North Star</span>
+      </div>
+      <h2 class="text-3xl font-black text-stone-900">Weekly Verified Operations</h2>
+      <p class="text-xs text-stone-400 italic mt-1">Projected impact — based on your inputs. Adjust assumptions to match your shop.</p>
+    </div>
+
+    <!-- Body: two columns -->
+    <div class="sl-body flex gap-5 flex-1 min-h-0">
+
+      <!-- Left column: operation + WVO formula -->
+      <div class="sl-col flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Verified Operation</p>
+          <p class="text-lg font-black text-stone-900 leading-tight">Sale completed at POS</p>
+          <p class="text-xs text-stone-600 mt-1 leading-relaxed">Order entered + payment processed + revenue auto-booked to the financial ledger</p>
+        </div>
+
+        <!-- WVO formula -->
+        <div class="bg-stone-900 rounded-2xl p-4 flex-1 flex flex-col justify-between">
+          <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-3">Weekly Volume Formula</p>
+
+          <!-- Formula -->
+          <div class="flex items-baseline flex-wrap gap-x-2 gap-y-1 mb-4">
+            <span class="text-amber-400 font-bold text-sm">250 orders/day</span>
+            <span class="text-stone-500 text-sm">×</span>
+            <span class="text-amber-400 font-bold text-sm">6 days/week</span>
+            <span class="text-stone-500 text-sm">=</span>
+            <span class="text-white font-black text-4xl leading-none">1,500</span>
+            <span class="text-stone-400 text-sm">ops/week</span>
+          </div>
+
+          <!-- Assumption chips -->
+          <div class="flex flex-col gap-2">
+            <span class="px-3 py-1.5 bg-stone-800 rounded-lg text-xs text-stone-300">
+              ⚙ Assumption — adjust this: 1 coffee shop location
+            </span>
+            <span class="px-3 py-1.5 bg-stone-800 rounded-lg text-xs text-stone-300">
+              ⚙ Assumption — adjust this: 250 orders per day
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: value derivation + total -->
+      <div class="sl-col flex flex-col gap-4">
+
+        <!-- Value derivation -->
+        <div class="border border-stone-200 rounded-2xl p-4 flex-1">
+          <p class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">Value Derivation</p>
+
+          <p class="text-xs text-stone-600 leading-relaxed mb-3">
+            Reconciliation time eliminated: <span class="font-semibold text-stone-800">45 min/day → 5 min/day</span><br/>
+            40 min saved × 6 days = <span class="font-semibold text-stone-800">240 min/week</span> = 4 hrs/week
+          </p>
+
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">
+            4 hrs × $20/hr =
+            <span class="font-black text-stone-900 text-base"> $80/week</span>
+          </p>
+
+          <div class="w-full h-px bg-stone-100 mb-4"></div>
+
+          <!-- Totals -->
+          <div class="flex items-end gap-6">
+            <div>
+              <p class="text-xs text-stone-400 mb-1">Per week</p>
+              <p class="text-2xl font-black text-amber-600">$80</p>
+            </div>
+            <div class="text-stone-300 text-lg mb-1">→</div>
+            <div>
+              <p class="text-xs text-stone-400 mb-1">Per year (× 52)</p>
+              <p class="text-3xl font-black text-stone-900">$4,160</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- What to watch -->
+        <div class="bg-stone-50 border border-stone-100 rounded-2xl p-4">
+          <p class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">What to watch</p>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Total sales completed at POS each week. This is the heartbeat number — it drives revenue recognition, inventory usage, and financial health in one atomic event.
+          </p>
+          <p class="text-xs text-stone-400 italic mt-2">⚙ Assumption — adjust this: $20/hr staff time used above</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
