@@ -1,0 +1,68 @@
+<style>
+.mode-portrait .sl-persona-row { flex-wrap: wrap; }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header row -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-1">What it does</p>
+        <h2 class="text-3xl font-black text-stone-900">Core Features</h2>
+      </div>
+      <!-- Persona chips -->
+      <div class="sl-persona-row flex items-center gap-2 pt-1">
+        <span class="px-4 py-1.5 rounded-full text-sm font-bold bg-amber-600 text-white shadow-sm">Owner</span>
+        <span class="px-4 py-1.5 rounded-full text-sm font-semibold bg-stone-100 text-stone-500">Barista</span>
+        <span class="px-4 py-1.5 rounded-full text-sm font-semibold bg-stone-100 text-stone-500">Manager</span>
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+
+      <div class="bg-amber-50 rounded-2xl p-4 border border-amber-100 flex flex-col">
+        <div class="text-xl mb-2">📊</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">P&amp;L Dashboard</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Live profit &amp; loss — revenue, costs, and margin visible the moment a sale is rung, not a week later</p>
+      </div>
+
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-100 flex flex-col">
+        <div class="text-xl mb-2">📈</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">Sales Reports</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Daily, weekly, and monthly breakdowns by item, category, shift, or time of day — plus week-over-week comparison</p>
+      </div>
+
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-100 flex flex-col">
+        <div class="text-xl mb-2">💳</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">Expense Tracking</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Log and categorize operating expenses — supplies, rent, payroll — in one place, mapped to the P&amp;L automatically</p>
+      </div>
+
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-100 flex flex-col">
+        <div class="text-xl mb-2">🧾</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">Tax Readiness</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Sales tax tracked per transaction, expenses categorized as they're entered — accountant-ready export any time</p>
+      </div>
+
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-100 flex flex-col">
+        <div class="text-xl mb-2">🔐</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">End-of-Day Close</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Automated cash drawer reconciliation and daily summary — close out the day in under 5 minutes</p>
+      </div>
+
+      <div class="bg-stone-50 rounded-2xl p-4 border border-stone-100 flex flex-col">
+        <div class="text-xl mb-2">🫘</div>
+        <h3 class="font-bold text-stone-900 text-sm mb-1">Inventory Alerts</h3>
+        <p class="text-xs text-stone-500 leading-relaxed">Track beans, syrups, and milk levels. Low-stock alerts fire before you run out mid-morning rush</p>
+      </div>
+
+    </div>
+
+    <p class="text-xs text-stone-400 mt-3">Showing features for: <span class="font-semibold text-amber-700">Owner</span></p>
+
+  </div>
+</section>
