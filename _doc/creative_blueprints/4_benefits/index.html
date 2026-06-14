@@ -1,0 +1,67 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-roi { flex-direction: row; align-items: center; }
+.mode-portrait .sl-roi { flex-direction: column; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <p class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-1">Why it matters</p>
+      <h2 class="text-3xl font-black text-stone-900">The Business Case</h2>
+    </div>
+
+    <!-- Metric cards grid -->
+    <div class="sl-grid grid gap-3 mb-4">
+
+      <!-- Card 1 -->
+      <div class="border border-stone-200 rounded-2xl p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Consolidation</p>
+        <p class="text-4xl font-black text-amber-600 leading-none mb-2">3 → 1</p>
+        <p class="text-sm text-stone-600">Replace Square, QuickBooks, and the nightly reconciliation spreadsheet with a single system</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-stone-200 rounded-2xl p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Time recovered</p>
+        <p class="text-4xl font-black text-amber-600 leading-none mb-2">45 min<span class="text-xl text-stone-400">/day</span></p>
+        <p class="text-sm text-stone-600">Freed from manual end-of-day reconciliation — that's over 4 hours back every week</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border border-stone-200 rounded-2xl p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Reporting lag</p>
+        <p class="text-4xl font-black text-amber-600 leading-none mb-2">0 days</p>
+        <p class="text-sm text-stone-600">P&amp;L updates in real time — know your margins the moment a sale is rung, not a week later</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="border border-stone-200 rounded-2xl p-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-2">Tax prep</p>
+        <p class="text-4xl font-black text-amber-600 leading-none mb-2">Year-<span class="text-3xl">round</span></p>
+        <p class="text-sm text-stone-600">Expenses categorized as they're entered — accountant-ready reports available any day, not just April</p>
+      </div>
+
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="sl-roi flex bg-stone-900 rounded-2xl p-5 gap-6">
+      <div class="shrink-0">
+        <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-1">Projected annual value</p>
+        <p class="text-4xl font-black text-amber-400 leading-none">$4,160<span class="text-lg text-stone-400">/yr</span></p>
+      </div>
+      <div class="w-px bg-stone-700 self-stretch hidden"></div>
+      <div class="flex-1">
+        <p class="text-xs text-stone-400 leading-relaxed">
+          <span class="text-stone-200 font-semibold">How:</span> 40 min/day saved × 6 days × $20/hr staff cost = $80/week recovered → $4,160/year.
+          Based on a single-location shop running 250 orders/day.
+          <span class="text-stone-500 italic"> Adjust inputs to match your shop.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
