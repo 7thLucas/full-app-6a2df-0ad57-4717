@@ -1,0 +1,99 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-landscape .sl-image-col { display: flex; width: 38%; }
+.mode-portrait .sl-image-col { display: none; }
+.mode-landscape .sl-text-col { width: 62%; }
+.mode-portrait .sl-text-col { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root flex h-full">
+
+    <!-- Left: text column — problem + solution -->
+    <div class="sl-text-col flex flex-col justify-center gap-0 p-12">
+
+      <!-- Slide label -->
+      <p class="text-xs font-bold tracking-widest uppercase text-stone-400 mb-6">The Case for BrewBooks</p>
+
+      <!-- Problem zone -->
+      <div class="mb-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-1 h-6 bg-red-400 rounded-full inline-block"></span>
+          <span class="text-xs font-bold tracking-widest uppercase text-red-500">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-black text-stone-900 leading-snug mb-4">Three tools, one coffee shop,<br>zero real-time visibility.</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5 shrink-0">✕</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">45 min/day lost to manual reconciliation</p>
+              <p class="text-xs text-stone-500 mt-0.5">Square exports don't match QuickBooks without nightly cleanup — every single day</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5 shrink-0">✕</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">P&amp;L is always a week behind</p>
+              <p class="text-xs text-stone-500 mt-0.5">Owners don't know their actual margins until books are closed — too late to act</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold mt-0.5 shrink-0">✕</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">Generic retail tools, not café-native</p>
+              <p class="text-xs text-stone-500 mt-0.5">No drink modifier logic, no ingredient-level inventory, no shift-based reporting</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-px bg-stone-200 mb-6"></div>
+
+      <!-- Solution zone -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-1 h-6 bg-amber-500 rounded-full inline-block"></span>
+          <span class="text-xs font-bold tracking-widest uppercase text-amber-700">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-black text-stone-900 leading-snug mb-4">One platform. Every sale books itself.</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-amber-500 font-bold mt-0.5 shrink-0">✓</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">POS + accounting share one unified ledger</p>
+              <p class="text-xs text-stone-500 mt-0.5">Every transaction auto-books to financials the moment it's rung — no export step</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-500 font-bold mt-0.5 shrink-0">✓</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">P&amp;L is live, always</p>
+              <p class="text-xs text-stone-500 mt-0.5">Know revenue, costs, and margins the moment a sale is rung — not a week later</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-amber-500 font-bold mt-0.5 shrink-0">✓</span>
+            <div>
+              <p class="font-semibold text-stone-800 text-sm">Built for coffee shops, not retrofitted</p>
+              <p class="text-xs text-stone-500 mt-0.5">Drink modifiers, ingredient inventory, and shift close-out are native features</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right: supporting image -->
+    <div class="sl-image-col overflow-hidden relative">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=coffee%20shop%20owner%20reviewing%20tablet%20with%20sales%20dashboard%2C%20warm%20morning%20light%2C%20focused%20calm%20expression%2C%20editorial%20photography"
+        class="w-full h-full object-cover"
+        alt="Coffee shop owner reviewing dashboard"
+      />
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+    </div>
+
+  </div>
+</section>
