@@ -1,0 +1,1 @@
+Make an app similar to QuickBooks that does POS and built toward coffee shops
